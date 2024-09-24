@@ -13,6 +13,7 @@ body {
     background-color:#ffffff ;
     border-radius: 10px;
     box-shadow: 1px 1px rgb(176, 176, 176);
+    overflow: hidden;
 }
 
 .first-box {
@@ -28,10 +29,8 @@ body {
     padding: 30px;
 }
 .first-subbox { 
-    border-bottom-left-radius: 10px;
     background-color: hsl(179, 62%, 43%);}
-.second-subbox { 
-    border-bottom-right-radius: 10px;
+.second-subbox {
     background-color: hsl(179, 55%, 52%); 
 }
 
@@ -54,4 +53,26 @@ button:hover {
     background-color: hsl(71, 61%, 51%);
     color: #ffffff;
     cursor: pointer;
+}
+
+
+@media  (max-width: 670px) {
+    body{   
+        height: 1200px;  
+        display: block; 
+        }
+    
+    .container {
+        margin: 40px auto 40px auto;
+        width: 325px;
+        height: 800px;
+     }
+    
+    .first-subbox, .second-subbox { width: 100%;}
+    .first-box, .second-box { 
+        height: auto; 
+        width: 100%; 
+        display: block;
+    }
+ 
 }
